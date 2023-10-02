@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="_userGet()">
+    <main>
+        <div class="top-container">
+            <figure data-data="paper">
+                <img src="img/paper-btn.png" alt="">
+            </figure>
+            <figure data-data="rock">
+                <img src="img/rock-btn.png" alt="">
+            </figure>
+            <figure data-data="scissors">
+                <img src="img/scissors-btn.png" alt="">
+            </figure>
+        </div>
+        <div class="container">
+            <div>
+                <div class="title" style="font-size: 30px; text-transform: uppercase;">your chose</div>
+                <div class="chose-area">
+                    <h2 id="pl-chose"></h2>
+                </div>
+                <div class="img-area">
+                    <img src="" id="pl-img">
+                </div>    
+            </div>
+            <div>
+                <div class="title neon" style="font-size: 40px; text-transform: uppercase;">result</div>
+                <div class="result-area">
+                    <h3 class="neon">your score: <span id="pl-score">0</span></h3><br>
+                    <h3 class="neon">computer score: <span id="cp-score">0</span></h3>
+                    <h1 id="result"></h1>
+                    <button id="again" onclick="reset()">reset</button>
+                </div>
+            </div>
+            <div>
+                <div class="title" style="font-size: 30px; text-transform: uppercase;">computer</div>
+                <div class="chose-area">
+                    <h2 id="cp-chose"></h2>
+                </div>
+                <div class="img-area">
+                    <img src="" id="cp-img">
+                </div>  
+            </div>   
+        </div>
+    </main>
+</body>
+<script src="myjs2.js"></script>
+</html>
